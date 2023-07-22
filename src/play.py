@@ -11,10 +11,13 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser()
 parser.add_argument("--temp", type=float, default=.2, help="Temperature. 0 meaning greedy sampling and 1 meaning uniform sampling")
+parser.add_argument("--prompt", type=str, default="*", help="Results injection prompt")
 
 args = parser.parse_args()
 
 temperature = args.temp
+prompt = args.prompt
+
 vocab = Vocab()
 
 checkpoint = "../checkpoints/gru_20230719_090016_829091_ip-172-31-33-178/checkpoint.pt"
