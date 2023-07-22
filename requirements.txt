@@ -1,0 +1,6 @@
+tqdm
+requests
+chess
+torch
+numpy==1.24.3
+bs4
