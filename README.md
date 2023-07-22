@@ -2,7 +2,7 @@ In this project, I test the idea of using sequence models to do next token predi
 
 Can deep understanding of the game be achieved purely from this representation?
 
-there are many ways the pgn could've been tokenized for sequence modelling (consise san notation etc)
+there are many ways the pgn could've been tokenized for sequence modelling (concise san notation etc)
 
 but as I was too lazy, The vocabulary of this model contains a sufficiently large number of algebraic notation tokens (the vocab size was more than 100k tokens I belive).
 This aspect can definitely be optimized in the future.
